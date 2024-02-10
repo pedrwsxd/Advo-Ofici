@@ -3,45 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/img/logo_pura.ico" type="image/x-icon">
-    <title>Advogada</title>
-
+    <link rel="shortcut icon" href="./src/img/ico/logo_pura.ico" type="image/x-icon">
+    <title>Advocacia</title>
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/reset1.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <script src="src/menu responsivo/assets/js/script.js"></script>
 </head>
 
-<body>
-    <header class="cabecalho">
+<body class="body">
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <img src="./src/img/Pasta svg/Logo--svg (1).svg" alt="Logo">
+            </div>
 
-    <div logo>
-            <img id="pl" src="src/img/Pasta svg/Logo-.svg" alt="Logo"/>
-     
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#Serviços">Serviços</a>
-                </li>
+            <div class="nav-list">
 
-                <li>
-                    <a href="#Direitos">Direitos</a>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">ínicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Direitos">Direitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#escritorio">Escritório</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-logo">
+                <img src="./src/img/Pasta svg/Logo--svg (1).svg" alt="Logo">
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow(open)"><img class="icon" src="src/menu responsivo/assets/img/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">ínicio</a>
                 </li>
-                <li>
-                    <a href="#contato">Contato</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Direitos">Direitos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#escritorio">Escritório</a>
                 </li>
             </ul>
-        </nav>
-    </div>
+        </div>
+
     </header>
 
 
     <main class="home" id="home">
-       
-    </main>
 
+    </main>
 
 </body>
 
