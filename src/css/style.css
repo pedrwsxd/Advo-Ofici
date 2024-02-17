@@ -21,7 +21,7 @@
 body
 {
   min-height: 100vh;
-  min-width: 400px;
+  min-width: 300px;
   overflow: hidden;
 }
 header
@@ -142,6 +142,9 @@ header nav #toggle
 
 @media (max-width:800px)
 {
+  body, html {
+    overflow-x: hidden!important;
+    }
     .home
     {
       min-width: 390px;
@@ -149,8 +152,8 @@ header nav #toggle
     .home h1 
     {
       margin-top: 5px;
-      font-size: 4rem;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: 500;
     }
     .home h2 
     {
@@ -165,7 +168,7 @@ header nav #toggle
       top: 80px;
       width: 100%;
       padding-top: 110px;
-      background: #806b6bc8;
+      background: rgba(248, 255, 255, 0.85);
       height: calc(100vh - 80px);
       z-index: 10;
       transition: left 0.4s ease;
@@ -180,7 +183,7 @@ header nav #toggle
       font-size: 2rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #ffd700;
+      color: #0000009b;
       width: 250px;
       height: 60px;
       line-height: 60px;
@@ -194,6 +197,169 @@ header nav #toggle
       background: #f3de88;
       color: rgb(254, 178, 79);
     }
+    .home .imagem .img-1
+   {
+    background: url(../img/Plano-de-fundo/img-1.jpg);
+    background-position: center;
+    background-size: contain left;
+    border-bottom: 5px solid black;
+  }
+    #toggle
+    {
+      display: flex;
+    }
+}
+
+@media (max-width:600px)
+{
+  body, html {
+    overflow-x: hidden!important;
+    }
+    .home
+    {
+      min-width: 390px;
+    }
+    .home h1 
+    {
+      margin-top: 5px;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .home h2 
+    {
+      margin-top: 10px;
+    }
+    header nav .menu
+    {
+      flex-direction: column;
+      row-gap: 2rem;
+      position: absolute;
+      left: -100%;
+      top: 80px;
+      width: 100%;
+      padding-top: 110px;
+      background: rgba(248, 255, 255, 0.85);
+      height: calc(100vh - 80px);
+      z-index: 10;
+      transition: left 0.4s ease;
+    }
+    header nav .menu.active
+    {
+      left: 0;
+    }
+    header nav .menu li a 
+    {
+      margin-left: unset;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0000009b;
+      width: 250px;
+      height: 60px;
+      line-height: 60px;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      transition: 0.25s ease;
+    }
+    header nav .menu li a:hover
+    {
+      background: #f3de88;
+      color: rgb(254, 178, 79);
+    }
+    .home .imagem .img-1
+   {
+    background: url(../img/Plano-de-fundo/img-1.jpg);
+    background-position: center;
+    background-size: contain left;
+    border-bottom: 5px solid black;
+  }
+    #toggle
+    {
+      display: flex;
+    }
+}
+
+@media (max-width:500px)
+{
+  body, html {
+    overflow-x: hidden!important;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .home
+    {
+      min-width: 300px;
+    }
+    .home h1 
+    {
+      margin-top: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .home h2 
+    {
+      margin-top: 10px;
+      font-size: 0.4rem;
+      font-weight: 400;
+    }
+    header nav .menu
+    {
+      flex-direction: column;
+      row-gap: 1rem;
+      position: absolute;
+      left: -100%;
+      top: 80px;
+      width: 100%;
+      padding-top: 110px;
+      background: rgba(248, 255, 255, 0.85);
+      height: calc(100vh - 80px);
+      z-index: 10;
+      transition: left 0.4s ease;
+    }
+    header nav .menu.active
+    {
+      left: 0;
+    }
+    header nav .menu li a 
+    {
+      margin-left: unset;
+      font-size: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0d09099b;
+      width: 250px;
+      height: 60px;
+      line-height: 60px;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      transition: 0.25s ease;
+      
+    }
+    header nav .menu li a:hover
+    {
+      background: #e3d3d388;
+      color: rgb(23, 19, 13);
+    }
+    .home .imagem .img-1
+   {
+    background: url(../img/Plano-de-fundo/img-1.jpg);
+    background-position: center;
+    background-size: contain left;
+    border-bottom: 5px solid black;
+  }
+
+  .home .imagem .img-2
+  {
+  background: url(../img/LOGO-SEM-FUNDO/Ouro-pura-Photoroom.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  top: 7rem;
+  }
+
     #toggle
     {
       display: flex;
