@@ -6,69 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/img/ico/logo_pura.ico" type="image/x-icon">
-    <title>Advocacia</title>
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <script src="src/menu responsivo/assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="src/jv/função.js"></script>
+    <title>Advocacia</title>
 </head>
 
 <body class="body">
-    <header class="header">
-        <nav class="nav-bar">
-            <div class="nav-logo">
-                <img src="./src/img/Pasta svg/Logo--svg (1).svg" alt="Logo">
-            </div>
+    <header>
 
-            <div class="nav-list">
-
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">ínicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Direitos">Direitos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#escritorio">Escritório</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="mobile-logo">
-                <img src="./src/img/Pasta svg/Logo--svg (1).svg" alt="Logo">
-            </div>
-            
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow(open)"><img class="icon" src="src/menu responsivo/assets/img/menu_white_36dp.svg"></button>
-            </div>
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">ínicio</a>
+        <div class="cabecalho-logo">
+            Logo
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#inicio">ínicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
+                <li>
+                    <a href="#contato">Contato</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Direitos">Direitos</a>
+                <li>
+                    <a href="#Direitos">Direitos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#escritorio">Escritório</a>
+                <li>
+                    <a href="#escritorio">Escritório</a>
                 </li>
             </ul>
-        </div>
-
+            <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
     </header>
 
+    <section class="home">
+        <div class="home-content">
+            <h1>Greiciane Gomes</h1>
+            <h2><b>Advocacia e assessoria</b></h2>
+        </div>
+        <div class="imagem">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+            <div class="img-3"></div>
+            <div class="img-4"></div>
+            <div class="img-5"></div>
+        </div>
+    </section>
 
-    <main class="home" id="home">
+    <script>
+        gsap.from('h1', 1.2, { opacity: 0, y: -150, delay: 0.5 })
+        gsap.from('h2', 1.2, { opacity: 0, y: -150, delay: 0.5 })
 
-    </main>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function () {
+            menu.classList.toggle('active');
+        }
+    </script>
 
 </body>
 
