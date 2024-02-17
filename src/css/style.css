@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@font-face {
+  font-family: 'Mourgen';
+  src: url('../fontes/MOURGEN.otf');
+  font-family: 'Inter';
+  src: url('../fontes/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
 :root{
  
  --royal-golden-light : #ffd700
@@ -12,7 +17,6 @@
    box-sizing: border-box;
    list-style: none;
    text-decoration: none;
-   font-family: "Inter", sans-serif;
 }
 body
 {
@@ -30,6 +34,7 @@ header
   padding: 0 5%;
   color: rgba(96, 31, 5, 0.934);
   font-size: 18px;
+  font-family: 'Inter', sans-serif;
 }
 header .cabecalho-logo
 {
@@ -38,6 +43,7 @@ header .cabecalho-logo
   font-weight: 700;
   text-transform: uppercase;
   margin-right: auto;
+  margin-top: 50px;
 }
 header nav
 {
@@ -69,26 +75,34 @@ header nav #toggle
   margin-left: 80px;
   cursor: pointer;
 }
+
+#toggle
+{
+  display: none;
+}
 .home
 {
   padding: 0 5%;
   color: #ffd700;
   text-align: center;
 }
-.home h1
+.home, h1
 {
-  color: black;
+  color: #806b6bc8;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 10px;
+  font-family:'Times New Roman', Times, serif;
 }
-.home h2
+.home, h2
 {
-  color: black;
-  font-size: 1.8rem;
+  color: wheat(130, 117, 48, 0.807);
+  font-size: 1rem;
   font-weight: 300;
+  font-family: 'Inter', sans-serif;
   margin-bottom: -25px;
+
 }
 .home .imagem .img-1,
 .home .imagem .img-2,
@@ -112,11 +126,20 @@ header nav #toggle
 
   .home .imagem .img-2
 {
-  background: url(../img/LOGO-SEM-FUNDO/Ouro.png);
+  background: url(../img/LOGO-SEM-FUNDO/Ouro-pura-Photoroom.png);
   background-position: center;
   background-size: cover;
   opacity: 0.4;
+  top: 7rem;
 }
+
+.inicio, h3 p
+{
+  display: none;
+}
+
+
+
 @media (max-width:800px)
 {
     .home
@@ -142,7 +165,7 @@ header nav #toggle
       top: 80px;
       width: 100%;
       padding-top: 110px;
-      background: black;
+      background: #806b6bc8;
       height: calc(100vh - 80px);
       z-index: 10;
       transition: left 0.4s ease;
@@ -170,5 +193,9 @@ header nav #toggle
     {
       background: #f3de88;
       color: rgb(254, 178, 79);
+    }
+    #toggle
+    {
+      display: flex;
     }
 }
