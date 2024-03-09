@@ -2,78 +2,211 @@
 <html lang="Pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/img/ico/logo_pura.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="src/jv/função.js"></script>
-    <title>Advocacia</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/img/ico/logo_pura.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="src/jv/função.js"></script>
+  <title>Advocacia</title>
 </head>
 
 <body class="body">
-    <header>
 
+  <header id="cabecalho">
+    <nav class="navbar navbar-expand-sm" aria-label="Terceiro exemplo da barra de navegação">
+      <div class="container-fluid">
         <div class="cabecalho-logo">
-            <img src="src/img/LOGO-SEM-FUNDO/Ouro-pura-mini-Photoroom-Photoroom.png" alt="Logo do cabecalho">
+          <img src="src/img/png/Logo.png" alt="Logo do cabecalho" height="300" width="400">
         </div>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#inicio">ínicio</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-                <li>
-                    <a href="#Direitos">Direitos</a>
-                </li>
-                <li>
-                    <a href="#escritorio">Escritório</a>
-                </li>
-            </ul>
-            <i class="fa-solid fa-bars" id="toggle"></i>
-        </nav>
-    </header>
-
-    <section class="home">
-        <div class="home-content">
-            <h1>Greiciane Gomes</h1>
-            <h2>Advocacia e assessoria</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+          aria-controls="navbarsExample03" aria-expanded="false" aria-label="Alternar de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0 fs-4 ">
+            <li class="nav-item">
+              <a class="nav-link active fw-medium" aria-current="page" href="#">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">ínicio</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a class="nav-link active" href="#"">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Contato</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a class="nav-link active" href="#"">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Escritório</font>
+                </font>
+              </a>
+            </li>
+            <li class="nav-item dropdown fw-medium">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Direitos</font>
+                </font>
+              </a>
+              <ul class="dropdown-menu fw-medium">
+                <li><a class="dropdown-item" href="#Cívil">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Cívil</font>
+                    </font>
+                  </a></li>
+                <li><a class="dropdown-item fw-medium" href="#Previdenciário">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Previdenciário</font>
+                    </font>
+                  </a></li>
+                <li><a class="dropdown-item fw-medium" href="#Trabalhista">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Trabalhista</font>
+                    </font>
+                  </a></li>
+                <li><a class="dropdown-item fw-medium" href="#Trânsito">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;">Trânsito</font>
+                    </font>
+                  </a></li>
+              </ul>
+            </li>
+          </ul>
+        
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Procurar" aria-label="Procurar">
+          </form>
         </div>
-        <div class="imagem">
-            <div class="img-1"></div>
-            <div class="img-2"></div>
-            <div class="img-3"></div>
-            <div class="img-4"></div>
-            <div class="img-5"></div>
+      </div>
+      <i class="fa-solid fa-bars" id="toggle"></i>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-4">
+          <img src="src/img/LOGO-SEM-FUNDO/Ouro-pura-Photoroom.png" class="d-block mx-lg-auto "
+            alt="Temas de inicialização" width="700" height="500" loading="lazy">
         </div>
-    </section>
+        <div class="col-lg-8 my-5">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 ">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Bem-vindos à Página da Advogada Greiciane Gomes.</font>
+            </font>
+          </h1>
 
-    <section class="inicio">
-        <h3><b>Bem-vindo à Advocacia Greiciane Gomes</b></h3>
-        <p><b>Em um mundo repleto de desafios legais e questões complexas, ter um advogado experiente e comprometido ao
-                seu lado pode fazer toda a diferença.
-                Na Greiciane Gomes Advocacia, estamos aqui para oferecer a você a orientação jurídica de que precisa
-                para navegar com confiança pelos intricados meandros do sistema legal.</b></p>
+          <p class="lead lh-base text-break">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Seja você um cliente em busca de orientação jurídica ou apenas
+                alguém interessado em compreender melhor os intricados aspectos da lei, estou extremamente feliz por
+                você estar aqui. Sou Greiciane Gomes, uma advogada comprometida com a justiça, a ética e a defesa dos
+                direitos de meus clientes.
 
+                Com uma paixão inabalável pelo sistema jurídico e uma dedicação incansável aos meus clientes, busco
+                sempre oferecer soluções eficazes e personalizadas para uma variedade de questões legais.
 
+                Nesta página, você encontrará informações sobre como posso ajudá-lo a enfrentar os desafios legais que possa estar
+                enfrentando.
 
-    </section>
-    <script>
-        gsap.from('h1', 1.2, { opacity: 0, y: -150, delay: 0.5 })
-        gsap.from('h2', 1.2, { opacity: 0, y: -150, delay: 0.5 })
+                Entendo que lidar com questões legais pode ser estressante e confuso. Minha missão é simplificar esse
+                processo para você, fornecendo orientações claras, honestas e acessíveis em cada etapa do caminho.
 
-        const menu = document.querySelector('.menu');
-        const toggle = document.getElementById('toggle');
+                Estou ansiosa para trabalhar ao seu lado e ajudá-lo a alcançar seus objetivos legais. Não hesite em
+                entrar em contato para marcar uma consulta. Estou aqui para ajudar.</font>
+            </font>
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Contato</font>
+              </font>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>>
 
-        toggle.onclick = function () {
-            menu.classList.toggle('active');
-        }
-    </script>
+    <div class="imagem">
+      <div class="img-1"></div>
+      <div class="img-2"></div>
+      <div class="img-3"></div>
+      <div class="img-4"></div>
+      <div class="img-5"></div>
+    </div>
 
+  </section>
+  <section id="acimadodireto">
+    <div class="p-5 text-center bg-body-tertiary">
+      <div class="container py-3" style="background-color: #E5EAEF;box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.381);">
+        <div class="imagem2">
+          <img class="rounded float-start" src="./src/img/Plano-de-fundo/portfolio-1-removebg-preview.png" alt="balança">
+        </div>
+        <h1 class="text-body-emphasis">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">"Justiça"</font>
+          </font>
+        </h1>
+        <p class="col-lg-8 mx-auto lead">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              "A justiça é o pilar fundamental que sustenta a integridade do sistema jurídico, garantindo a equidade, a imparcialidade e o cumprimento das leis para o bem-estar de todos os cidadãos." </font>
+          </font>
+          </font>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="grid" class="grid-container">
+  <div class="container-fluid">
+    <div class=" text-center bg-body-tertiary">
+      <div id="Direitos">
+        <h1 class="janela-boa">Direitos</h1>
+      </div>
+    </div>
+    <div class="row janelas-conta">
+      <div id="Cívil" class="janelas1 janelas">
+        <h1>Civil</h1>
+        <button type="button">Saiba mais!</button>
+      </div>
+      <div id="Previdenciário" class="janelas2 janelas">
+        <h1>Previdenciário</h1>
+        <button type="button">Saiba mais!</button>
+      </div>
+      <div id="Trabalhista" class="janelas3 janelas">
+        <h1>Trabalhista</h1>
+        <button type="button">Saiba mais!</button>
+      </div>
+      <div id="Trânsito" class="janelas4 janelas">
+        <h1>Trânsito</h1>
+        <button type="button">Saiba mais!</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <script>
+    gsap.from('h1', 1.2, { opacity: 0, y: -150, delay: 0.5 })
+    gsap.from('h2', 1.2, { opacity: 0, y: -150, delay: 0.5 })
+
+    const menu = document.querySelector('.menu');
+    const toggle = document.getElementById('toggle');
+
+    toggle.onclick = function () {
+      menu.classList.toggle('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

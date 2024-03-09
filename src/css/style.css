@@ -3,13 +3,9 @@
   src: url('../fontes/MOURGEN.otf');
   font-family: 'Inter';
   src: url('../fontes/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  font-family: 'Billie';
+  src: url("../fontes/Billie\ Eilish.otf");
 }
-:root{
- 
- --royal-golden-light : #ffd700
- --royal-golden-dark : #808080
-}
-
 *
 {
    margin: 0;
@@ -22,88 +18,122 @@ body
 {
   min-height: 100vh;
   min-width: 300px;
-  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #F8F9FA;
 }
-header
-{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 80px;
-  padding: 0 5%;
-  color: rgba(96, 31, 5, 0.934);
-  font-size: 18px;
-  font-family: 'Inter', sans-serif;
+.navbar{
+  height: 10rem;
 }
-header .cabecalho-logo
-{
-  color: #ffd700;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-right: auto;
-  margin-top: 50px;
-}
-header nav
-{
-  display: flex;
-  align-items: center;
-}
-header nav .menu
-{
-  display: flex;
-  align-items: center;
-}
-header nav .menu li a
-{
-  position: relative;
-  color: #ffd700;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-left: 40px;
-  border-radius: 0.4rem;
-  transition: color 0.4s ease;
-} 
-header nav .menu li a:hover
-{
-  color: aliceblue;
-}
-header nav #toggle
-{
-  font-size: 1.3rem;
-  margin-left: 80px;
-  cursor: pointer;
-}
-
-#toggle
-{
-  display: none;
+#cabecalho{
+  background-color: #ffffff00;
+  margin-bottom: -10rem;
 }
 .home
 {
+  height: 700px;
   padding: 0 5%;
-  color: #ffd700;
+  color: #171111;
+  justify-content: center;
+  align-content: center;
+  font-family: Times, serif;
+}
+
+.para-content
+{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
   text-align: center;
 }
-.home, h1
-{
-  color: #806b6bc8;
-  text-transform: uppercase;
+
+  
+  .janela-boa{
+  width: auto;
+  margin-top: 5rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2a2626;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 10px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Billie", "Inter";
+    
+  }
+  .janelas-conta{
+    display: grid;
+    width: auto;
+    height: 980px;
+    align-content: center;
+    justify-content: center;
+    margin: 60px 80px 40px 4px;
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 200px;
+    row-gap: 100px;
+    background: url(../img/Plano-de-fundo/Direito2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+    padding: 0;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  }
+  .janelas{
+    padding: 0;
+    margin: 0;
+    border: 1px solid goldenrod ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  }
+  .janelas h1{
+    font-size: 2rem;
+    text-shadow: 1px 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #151501;
+    align-self: center;
+  }
+  .janelas button{
+    width: 200px;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+    border: none;
+    border-radius: 100px;
+    font-size: 30px;
+    background: #2a2626;
+    color: rgb(255, 255, 255);
+  }
+  .janelas button:hover{
+    color: #f3de88;
+  }
+  .janelas1{
+    width: 300px;
+    height: 300px;
+    background: url(../img/img-tabela/4familia.png);
+    background-size: cover;
+  }
+  .janelas2{
+    width: 300px;
+    height: 300px;
+    background: url(../img/img-tabela/1balanca.png);
+    background-size: cover;
+  }
+  .janelas3{
+    width: 300px;
+    height: 300px;
+    background: url(../img/img-tabela/2trabalho.png);
+    background-size: cover;
+  }
+  .janelas4{
+    width: 300px;
+    height: 300px;
+    background: url(../img/img-tabela/3transito.png);
+    background-size: cover;
 }
-.home, h2
-{
-  color: wheat(130, 117, 48, 0.807);
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: -25px;
 
-}
 .home .imagem .img-1,
 .home .imagem .img-2,
 .home .imagem .img-3,
@@ -119,26 +149,59 @@ header nav #toggle
 }
 .home .imagem .img-1
 {
-  background: url(../img/Plano-de-fundo/img-1.jpg);
+  background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
   background-position: center;
   background-size: cover;
 }
 
-  .home .imagem .img-2
+.home .imagem .img-2
 {
-  background: url(../img/LOGO-SEM-FUNDO/Ouro-pura-Photoroom.png);
+background: url();
+background-position: center;
+background-size: cover;
+opacity: 0.4;
+top: 7rem;
+}
+
+.home .imagem .img-3
+{
+  background: url();
   background-position: center;
   background-size: cover;
-  opacity: 0.4;
-  top: 7rem;
 }
 
-.inicio, h3 p
+@media (max-width:1080px)
 {
-  display: none;
+  body, html {
+    overflow-x: hidden!important;
+    }
+    .home
+    {
+      min-width: 390px;
+    }
+    .home h1 
+    {
+      margin-top: 5px;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .home h2 
+    {
+      margin-top: 10px;
+    }
+    
+    .home .imagem .img-1
+   {
+    background: url(../img/Plano-de-fundo/img-1.jpg);
+    background-position: center;
+    background-size: contain left;
+    border-bottom: 5px solid black;
+  }
+    #toggle
+    {
+      display: flex;
+    }
 }
-
-
 
 @media (max-width:800px)
 {
@@ -159,44 +222,7 @@ header nav #toggle
     {
       margin-top: 10px;
     }
-    header nav .menu
-    {
-      flex-direction: column;
-      row-gap: 2rem;
-      position: absolute;
-      left: -100%;
-      top: 80px;
-      width: 100%;
-      padding-top: 110px;
-      background: rgba(248, 255, 255, 0.85);
-      height: calc(100vh - 80px);
-      z-index: 10;
-      transition: left 0.4s ease;
-    }
-    header nav .menu.active
-    {
-      left: 0;
-    }
-    header nav .menu li a 
-    {
-      margin-left: unset;
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #0000009b;
-      width: 250px;
-      height: 60px;
-      line-height: 60px;
-      display: block;
-      text-align: center;
-      border-radius: 5px;
-      transition: 0.25s ease;
-    }
-    header nav .menu li a:hover
-    {
-      background: #f3de88;
-      color: rgb(254, 178, 79);
-    }
+    
     .home .imagem .img-1
    {
     background: url(../img/Plano-de-fundo/img-1.jpg);
@@ -229,51 +255,7 @@ header nav #toggle
     {
       margin-top: 10px;
     }
-    header nav .menu
-    {
-      flex-direction: column;
-      row-gap: 2rem;
-      position: absolute;
-      left: -100%;
-      top: 80px;
-      width: 100%;
-      padding-top: 110px;
-      background: rgba(248, 255, 255, 0.85);
-      height: calc(100vh - 80px);
-      z-index: 10;
-      transition: left 0.4s ease;
-    }
-    header nav .menu.active
-    {
-      left: 0;
-    }
-    header nav .menu li a 
-    {
-      margin-left: unset;
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #0000009b;
-      width: 250px;
-      height: 60px;
-      line-height: 60px;
-      display: block;
-      text-align: center;
-      border-radius: 5px;
-      transition: 0.25s ease;
-    }
-    header nav .menu li a:hover
-    {
-      background: #f3de88;
-      color: rgb(254, 178, 79);
-    }
-    .home .imagem .img-1
-   {
-    background: url(../img/Plano-de-fundo/img-1.jpg);
-    background-position: center;
-    background-size: contain left;
-    border-bottom: 5px solid black;
-  }
+    
     #toggle
     {
       display: flex;
@@ -294,55 +276,19 @@ header nav #toggle
     }
     .home h1 
     {
-      margin-top: 5px;
-      font-size: 1rem;
-      font-weight: 500;
+      margin-top: 3px;
+      letter-spacing: 2px;
+      font-size: 30px;
+      font-weight: 700;
     }
     .home h2 
     {
       margin-top: 10px;
-      font-size: 0.4rem;
-      font-weight: 400;
-    }
-    header nav .menu
-    {
-      flex-direction: column;
-      row-gap: 1rem;
-      position: absolute;
-      left: -100%;
-      top: 80px;
-      width: 100%;
-      padding-top: 110px;
-      background: rgba(248, 255, 255, 0.85);
-      height: calc(100vh - 80px);
-      z-index: 10;
-      transition: left 0.4s ease;
-    }
-    header nav .menu.active
-    {
-      left: 0;
-    }
-    header nav .menu li a 
-    {
-      margin-left: unset;
-      font-size: 2rem;
+      font-size: 5px;
       font-weight: 700;
-      text-transform: uppercase;
-      color: #0d09099b;
-      width: 250px;
-      height: 60px;
-      line-height: 60px;
-      display: block;
-      text-align: center;
-      border-radius: 5px;
-      transition: 0.25s ease;
-      
     }
-    header nav .menu li a:hover
-    {
-      background: #e3d3d388;
-      color: rgb(23, 19, 13);
-    }
+   
+    
     .home .imagem .img-1
    {
     background: url(../img/Plano-de-fundo/img-1.jpg);
